@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-black md:bg-home-background md:bg-opacity-50 font-netflix">
+
+    <header class="mb-2">
+        <div class="p-3 pt-4">
+            <a href="https://www.netflix.com">
+                <img class="w-[152px]" src="img/netflix-logo.svg" alt="Netflix Logo"></a>
+        </div>
+    </header>
+
+    <main class="mb-10">
+        <div
+            class="flex flex-col w-[89%] pt-2 mx-auto md:mx-auto md:w-[400px] md:bg-black md:bg-opacity-90 md:px-16 md:py-10 md:rounded-[3px]">
+            <h3 class="text-white text-[28px] font-semibold">Sign In</h3>
+            <form class="flex flex-col mt-6" action="submit">
+
+                <input id="email-el"
+                    class="bg-darkGray w-[full] rounded-[3.5px] p-2 px-4 py-3 placeholder:text-[13px] text-[13px] text-white placeholder:text-lightGray focus:outline-none caret-white"
+                    placeholder="Email or phone number" type="text">
+<!--  border-b-2 border-b-orange-400 -->
+                <p class="hidden text-orange-400 text-[13px] mt-1.5">Please enter a valid email or phone number.</p>
+
+                <input id="password-el"
+                    class="bg-darkGray w-[full] rounded-[3.5px] p-2 px-4 py-2.5 mt-4 placeholder:text-[13px] text-white placeholder:text-lightGray focus:outline-none caret-white"
+                    placeholder="Password" placeholder="Password" type="password">
+
+                <p class="hidden text-orange-400 text-[13px] mt-1.5">Your password must contain between 4 and 60
+                    characters.</p>
+
+                <button
+                    class="bg-red-600 w-[full] rounded-[3.5px] mt-9 p-2 py-3 text-center text-white text-sm font-semibold">
+                    Sign In
+                </button>
+
+                <div class="flex justify-between mt-3">
+                    <span class="flex items-center">
+                        <input type="checkbox" name="" id="checkbox">
+                        <p class="ml-1 text-lightGray text-[13px]">Remember me</p>
+                    </span>
+                    <p class="text-lightGray text-[13px]">Need help?</p>
+                </div>
+            </form>
+
+            <div class="mt-10 text-white">
+                <p class="text-lightGray text-[14px]  mb-3">New to Netflix? <span class="text-white">Sign up now.</span>
+                </p>
+
+                <p class="text-lightGray text-[12px]">This page is protected by Google reCAPTCHA to ensure you're not a
+                    bot. <span class="text-blue-600">Learn more.</span></p>
+            </div>
+        </div>
+    </main>
+
+    <div class="container w-full">
+        <hr class="bg-gray-600 md:hidden">
+    </div>
+    <footer class="text-lightGray md:bg-black md:bg-opacity-90 pb-20">
+        <div class="container flex flex-col mt-10 mx-8">
+            <div class="text-[14px] mb-8">
+            </div>
+            <!-- <div class="flex ml-[-18px] justify-around text-[12px]">
+                <div class="flex flex-col space-y-4">
+                    <p>FAQ</p>
+                    <p>Privacy</p>
+                </div>
+                <div class="flex flex-col space-y-4">
+                    <p>Help Center</p>
+                    <p>Cookie Preferences</p>
+                </div>
+                <div class="flex flex-col space-y-4">
+                    <p>Terms of Use</p>
+                    <p>Corporate information</p>
+                </div>
+            </div> -->
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
